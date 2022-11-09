@@ -24,7 +24,6 @@ contract PaymentDistributor {
     /// @notice Updates a payee to the distribution list
     /// @dev Ensures that both payee and share length match and also that there is no over assignment of shares.
     function _updatePayee(address payee, uint16 share) internal {
-        require(address(this).balance == 0, "Must have a zero balance before updating payee shares");
         uint payeeIndex = _indexOfPayee(payee);
         require(payeeIndex < _payees.length, "Payee has not been added yet.");
         _shares[payeeIndex] = share;
