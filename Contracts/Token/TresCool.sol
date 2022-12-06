@@ -35,8 +35,8 @@ contract TresCool is ERC721A, ERCCooldown, Ownable, ReentrancyGuard, PaymentDist
     /* Public Variables */
 
     uint256 public minCost = 0.005 ether;
-    uint128 public maxSupply = 5000;
-    uint128 public maxMintAmountPerTx = 1;
+    uint128 public maxSupply = 1074;
+    uint128 public maxMintAmountPerTx = 2;
 
     /* Private Variables */
 
@@ -92,12 +92,12 @@ contract TresCool is ERC721A, ERCCooldown, Ownable, ReentrancyGuard, PaymentDist
 
     /// @notice Public mint function that accepts a quantity and mints to the msg.sender.
     /// @dev Mint function with price and maxMints checks.
-    function mint(uint256 quantity) external payable nonReentrant {
+    function mint(address recipient, uint256 quantity) external payable nonReentrant {
         require(_paused == false, "Cannot mint while paused");
         require(msg.value >= quantity * minCost, "Must send at least the minimum cost to mint.");
         require(quantity <= maxMintAmountPerTx, "Cannot mint over maximum allowed mints per transaction");
         _mintCooldown(msg.value);
-        _internalMint(msg.sender, quantity);
+        _internalMint(recipient, quantity);
     }
 
     /// @notice Minting functionality for the contract owner which mints a quantity to a set address.
