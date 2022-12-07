@@ -24,8 +24,8 @@
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "erc721a/contracts/ERC721A.sol";
-import "./ERCCool/ERCCooldown.sol";
-import "./PaymentDistributor.sol";
+import "../Carbon/ERCCooldown.sol";
+import "../Finance/PaymentDistributor.sol";
 
 pragma solidity ^0.8.2;
 
