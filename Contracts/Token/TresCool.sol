@@ -90,7 +90,7 @@ contract TresCool is ERC721A, ERCCooldown, Ownable, ReentrancyGuard, PaymentDist
 
     /* Mint */
 
-    /// @notice Public mint function that accepts a quantity and mints to the msg.sender.
+    /// @notice Public mint function that accepts a quantity and mints to the recipient.
     /// @dev Mint function with price and maxMints checks.
     function mint(address recipient, uint256 quantity) external payable nonReentrant {
         require(_paused == false, "Cannot mint while paused");
