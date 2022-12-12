@@ -8,7 +8,7 @@ const hre = require("hardhat");
 
 async function main() {
   
-  const contractName = "TresCool";
+  const contractName = "ERC721Cool";
   const [deployer] = await ethers.getSigners(); //get the account to deploy the contract
 
   console.log("Deploying contract [" + contractName + "] with the account:", deployer.address); 
