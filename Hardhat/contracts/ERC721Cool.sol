@@ -16,7 +16,7 @@ import "./ERCCooldown.sol";
 
 /// @notice ERC721Cool Generic NFT Contract
 contract ERC721Cool is ERCCooldown, ERC721A, Ownable {
-    constructor() ERC721A("ERC721Cool", "CoolNFTs") ERCCooldown(1000, 500, 500) {}
+    constructor(uint16 royalty, uint16 transferCoolRate, uint16 mintCoolRate) ERC721A("ERC721Cool", "CoolNFTs") ERCCooldown(royalty, transferCoolRate, mintCoolRate) {}
 
     /// @notice Basic mint quanitity functionality
     /// @dev Sends quanity of NFTs to msg.sender
