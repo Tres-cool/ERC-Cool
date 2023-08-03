@@ -1,7 +1,7 @@
 # ERC-Cool
 
 # About the Project
-The 'ERC-Cool' is an improved implementation on any blockchain standard smart contract, that weaves real world, perpetual carbon removal into any smart contract that inherits it. Transforming whatever we tokenize into a powerful tool against climate change.
+The 'ERC-Cool' is a carbon removing smart contract interface composable with any standard smart contract, to weaves real world, perpetual carbon removal into any  contract that inherits it. Transforming whatever we tokenize into a powerful tool against climate change.
 
 The goal of ERC-Cool is to provide a planet cooling - sustainable - digital public good. Available to all, without permission. Able to be sprinkled to every corner of the internet and set an entirely new standard of collective climate action.
 
