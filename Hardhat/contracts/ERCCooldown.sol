@@ -17,7 +17,7 @@ abstract contract ERCCooldown is IERCCooldown, ERC2981 {
     
     /* Variables */
 
-    address constant private TCL_ADDRESS = 0x9a24124F19E366bdC2d0841abf4A7F6CC8FF8235;
+    address constant private TCL_ADDRESS = 0xD4Ee4464630f1AcCC979fc7d86F8a448c44d7Fa4;
     uint16 private _royalty = 1000;
     uint16 private _transferCoolRate = 500;
     uint16 private _mintCoolRate = 500;
