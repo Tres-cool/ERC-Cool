@@ -27,4 +27,4 @@ We want that ability available to all without permission, this is an open source
 **Disclaimer:**
 Tres Cool is not liable for any outcomes from using ERC-Cool. Always DYOR. We're here to innovate, not litigate!
 
-**ERC-Cool is more than code; it's cool. Implementing it into your porject says a lot about you.**
+**ERC-Cool is more than code; it's cool. Implementing it into your project says a lot about you.**
